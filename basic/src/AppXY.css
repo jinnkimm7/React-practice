@@ -1,12 +1,12 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: beige;
+  background-color: white;
 }
 
 .pointer {
   position: absolute;
-  background-color: crimson;
+  background-color: red;
   border-radius: 50%;
   width: 30px;
   height: 30px;

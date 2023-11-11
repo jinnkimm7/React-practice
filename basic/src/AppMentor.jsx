@@ -20,7 +20,10 @@ export default function AppMentor(props) {
       <button
         onClick={() => {
           const name = prompt(`what's your mentor's name?`);
-          setPerson((prev) => ({ ...prev, mentor: { ...prev.mentor, name } }));
+          setPerson((prev) => ({
+            ...prev,
+            mentor: { ...prev.mentor, name }
+          }));
         }}
       >
         멘토 이름 바꾸기
@@ -28,11 +31,14 @@ export default function AppMentor(props) {
       <button
         onClick={() => {
           const title = prompt(`what's your mentor's title?`);
-          setPerson((prev) => ({ ...prev, mentor: { ...prev.mentor, title } }));
+          setPerson((prev) => ({
+            ...prev,
+            mentor: { ...prev.mentor, title }
+          }));
         }}
       >
         멘토 타이틀 바꾸기
       </button>
-    </div >
+    </div>
   );
 }
