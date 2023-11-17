@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Heading, { HeadingProps } from '../components/Heading/';
+import Heading, { HeadingProps } from '../components/Heading';
 
 const meta: Meta<typeof Heading> = {
   title: 'Components/Header',
