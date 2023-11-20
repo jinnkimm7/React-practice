@@ -1,6 +1,6 @@
-import React, { PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 
-interface TextProps extends PropsWithChildren {
+export interface TextProps extends PropsWithChildren {
   block?: boolean;
   paragraph?: boolean;
   size?: 'text-sm' | 'text-base' | 'text-lg' | 'text-xl' | 'text-2xl';

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Text from '../components/Text';
+import Text, { TextProps } from '../components/Text';
 
 const meta: Meta<typeof Text> = {
   title: 'Components/Text',
@@ -18,7 +18,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = (args) => (
+export const Default: Story = (args: TextProps) => (
   <>
     <Text {...args} >
       텍스트
