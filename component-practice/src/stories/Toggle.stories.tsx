@@ -6,6 +6,7 @@ const meta: Meta<typeof Toggle> = {
   component: Toggle,
   argTypes: {
     disabled: { control: 'boolean' },
+    color: { control: 'select' },
   },
 }
 
