@@ -593,6 +593,14 @@ video {
   height: 1.25rem;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -607,6 +615,14 @@ video {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[800px\] {
+  width: 800px;
 }
 
 @keyframes spin {
@@ -659,6 +675,18 @@ video {
 
 .fill-yellow-400 {
   fill: #facc15;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-fill {
+  object-fit: fill;
 }
 
 .align-middle {
