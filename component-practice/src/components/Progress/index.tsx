@@ -1,7 +1,11 @@
+export interface ProgressProps {
+  value: number;
+}
+
 export default function Progress({
   value = 50,
   ...props
-}) {
+}: ProgressProps) {
 
   return (
     <div className='relative w-[100%] h-4' {...props}>
