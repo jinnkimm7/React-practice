@@ -1,8 +1,8 @@
 export interface IconProps {
   name: string;
-  size: 'w-4' | 'w-8' | 'w-12';
-  strokeWidth: 1 | 2 | 3;
-  color: string;
+  size?: 'w-4' | 'w-8' | 'w-12';
+  strokeWidth?: 1 | 2 | 3;
+  color?: string;
 }
 
 export default function Icon({
