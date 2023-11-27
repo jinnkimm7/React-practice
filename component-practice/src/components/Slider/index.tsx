@@ -1,14 +1,22 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
+export interface SliderProps {
+  min: number;
+  max: number;
+  step: number;
+  defaultValue: number;
+  onChange: (value: number) => void;
+}
+
 export default function Slider({
   min = 0,
   max = 100,
   step = 0.1,
-  defaultValue,
+  defaultValue = 1,
   onChange,
   ...props
-}) {
-  const sliderRef = useRef(null);
+}: SliderProps) {
+  const sliderRef = useRef<HTMLDivElement>(null!);
   const [dragging, setDragging] = useState(false);
   const [value, setValue] = useState(defaultValue ? defaultValue : min);
 
@@ -21,10 +29,10 @@ export default function Slider({
   }, []);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       if (!dragging) return;
 
-      const handleOffset = e.pageX - sliderRef.current.offsetLeft;
+      const handleOffset = (e as MouseEvent).pageX - sliderRef.current.offsetLeft;
       const sliderWidth = sliderRef.current.offsetWidth;
 
       const track = handleOffset / sliderWidth;

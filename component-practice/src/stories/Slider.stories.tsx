@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Slider from '../components/Slider';
+import Slider, { SliderProps } from '../components/Slider';
 import Icon from '../components/Icon';
 
 const meta: Meta<typeof Slider> = {
@@ -18,7 +18,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = (args) => (
+export const Default: Story = (args: SliderProps) => (
   <Slider {...args} />
 );
 
@@ -29,7 +29,7 @@ Default.args = {
   step: 0.1
 }
 
-export const VolumeController: Story = (args) => (
+export const VolumeController: Story = (args: SliderProps) => (
   <div className='w-[200px] flex items-center justify-between'>
     <Icon name='volume' size='w-8' />
     <Slider {...args} />
