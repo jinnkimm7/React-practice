@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Divider from '../components/Divider';
+import Divider, { DividerProps } from '../components/Divider';
 import Text from '../components/Text';
 
 const meta: Meta<typeof Divider> = {
@@ -15,7 +15,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Horizontal: Story = (args) => (
+export const Horizontal: Story = (args: DividerProps) => (
   <>
     <Text>Upper</Text>
     <Divider {...args} />
@@ -27,7 +27,7 @@ Horizontal.args = {
   type: 'horizontal',
 }
 
-export const Vertical: Story = (args) => (
+export const Vertical: Story = (args: DividerProps) => (
   <>
     <Text>Left</Text>
     <Divider {...args} />
