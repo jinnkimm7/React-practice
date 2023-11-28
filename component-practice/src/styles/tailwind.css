@@ -780,6 +780,10 @@ video {
   height: 2px;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .w-11 {
   width: 2.75rem;
 }
